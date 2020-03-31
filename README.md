@@ -47,6 +47,10 @@ Technologies and Tools Used:
 - Base Folders Created
 - Added Required Setup Links (CSS/JS)
 - Setup SASS
+- Header Created and Background Added
+- Nav Created and Styled
+- Jump Link Image Created
+- Hero Text Created and Edited
 
 
 
