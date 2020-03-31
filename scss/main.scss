@@ -1,0 +1,12 @@
+// This is my Global Imports
+// This is where import all of my partials and compile them as one ready to be imported to the css stylesheet
+
+@import 'partials/variables',
+        'partials/mixins',
+        'partials/base',
+        'partials/layouts',
+        'partials/helpers',
+        'partials/components',
+        'partials/responsive-design';
+
+// I just linked/imported my partials to my css page
