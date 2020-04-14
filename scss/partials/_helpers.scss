@@ -4,9 +4,10 @@
     text-transform: uppercase;
     color: white;
     font-size: 50px;
-    margin-top: 14%;
+    padding-top: 14%;
     margin-bottom: 0;
     text-shadow: 2px 2px 10px #4f9ad6;
+    text-align: center;
 }
 
 #sub-text {
@@ -14,6 +15,7 @@
     text-shadow: 2px 2px 3px #4f9ad6;
     margin-top: 0;
     color: #000000;
+    text-align: center;
 }
 
 #dp-pic {
@@ -24,8 +26,352 @@
     background-color: white;
     border-radius: 50%;
     left: 50%;
-    background-image: url(/media/images/my_pics/khanyi-min.JPG);
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
+    background-color: #63b0eeea;
+}
+
+// About Me
+
+.about-h1 {
+    grid-column: span 2;
+    text-align: center;
+    border-bottom: 1px solid #4f9ad6;
+
+}
+
+#about {
+    margin: auto 100px;
+
+    img {
+        width: 400px;
+        height: 300px;
+    }
+
+    p {
+        font-size: 18px;
+    }
+}
+
+.first-para {
+    margin-top: 10px;
+    margin-right: 36%;
+    transition: 0.5s;
+}
+
+.second-para {
+    margin-left: 36%;
+    text-align: right;
+    transition: 0.5s;
+}
+
+.signature {
+    font-family: 'Oleo Script Swash Caps';
+    font-style: italic;
+    transition: 0.5s;
+}
+
+// Education
+
+.edu-h1 {
+    grid-column: span 3;
+    text-align: center;
+    border-bottom: 1px solid #4f9ad6;
+}
+
+#education {
+    margin: auto 100px;
+}
+
+.edu-block {
+
+    h3 {
+        text-align: left;
+    }
+
+    p {
+        text-align: right;
+    }
+}
+
+#award {
+    margin: auto 100px;
+
+    p {
+        margin-top: 0;
+    }
+}
+
+.award-h1{
+    grid-column: span 3;
+    text-align: center;
+    border-bottom: 1px solid #4f9ad6;
+}
+
+.award-h4 {
+    grid-column: span 3;
+    text-align: center;
+    margin: 0;
+}
+
+.award-block {
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    img {
+        width: 300px;
+        height: 250px;
+    }
+}
+
+.award-block:hover .sicText {
+    height: 100%;
+    opacity: 1;
+}
+
+.award-block:hover .sicText p {
+    top: 50%;
+    opacity: 1;
+}
+
+.sicText {
+    width: 300px;
+    height: 250px;
+    background-color: #03a9f4bf;
+    position: absolute;
+    left: 0;
+    right: 0;
+    transform: translateX(34.5px);
+    transition: all ease-in-out 0.8s;
+    opacity: 0;
+    height: 0;
+    bottom: 0;
+    top: 0;
+    cursor: pointer;
+
+    p {
+        position: absolute;
+        top: -6rem;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        color: white;
+        opacity: 0;
+        transition: all 0.1s ease-in-out 0.2s;
+    }
+}
+
+.innovationChallenge {
+    grid-column: span 3;
+    text-align: center;
+}
+
+#skill {
+    margin: 50px 100px;
+
+    p {
+        grid-column: span 4;
+        text-align: center;
+        margin-top: 0;
+    }
+}
+
+.skill-h1 {
+    grid-column: span 4;
+    text-align: center;
+    border-bottom: 1px solid #4f9ad6;
+}
+
+.codeIcon {
+    text-align: center;
+    
+    span {
+        transition: all ease-in-out .5s;
+    }
+}
+
+
+.icon {
+    width: 50px;
+    height: 50px;
+    // background-color: deeppink;
+    // border-radius: 10px;
+    margin-left: 40%;
+    cursor: pointer;
+    transition: all ease-in-out .5s;
+
+    img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .css3 {
+        width: 40px;
+        height: 45px;
+    }
+
+}
+
+.codeIcon:hover span {
+    text-shadow: 0px 6px 3px black;
+}
+
+.codeIcon:hover .icon {
+    box-shadow: 2px 2px 3px black;
+}
+
+
+#projects {
+    margin: 50px 100px;
+}
+
+.project-h1 {
+    grid-column: span 3;
+    text-align: center;
+    border-bottom: 1px solid #4f9ad6;
+}
+
+.project-block {
+    background-color: #4f9ad6;
+    width: 380px;
+    height: 300px;
+    position: relative;
+    // margin-left: 10%;
+
+    img {
+        width: 380px;
+        height: 300px; 
+    }
+
+    video {
+        width: 380px;
+        height: 300px; 
+        object-fit: cover;
+    }
+
+    span {
+        background-color: #00BCD4;
+        width: 380px;
+        height: 300px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 1;
+        transition: all .5s ease-out;
+    }
+
+    .project-overlay {
+        transition: all .5s ease-in-out;
+        background-color: #03a9f4cc;
+        position: absolute;
+        height: 300px;
+        width: 0;
+        opacity: 0;
+        left: 0;
+        top: 0;
+    }
+
+    .overlay-text {
+        transition: all .5s ease-in-out;
+        color: white;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        text-align: center;
+        font-size: 20px;
+        opacity: 0;
+        transform: translate(-50%,-50%);
+    }
+
+    .video-text {
+        transition: all .5s ease-in-out;
+        color: white;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        text-align: center;
+        font-size: 20px;
+        opacity: 1;
+        transform: translate(-50%,-50%);
+        height: auto;
+    }
+}
+
+.project-block:hover .overlay-text {
+    opacity: 1;
+}
+
+.project-block:hover .project-overlay {
+    opacity: 1;
+    width: 380px;
+}
+
+.project-block:hover span, .video-text {
+    height: 0;
+    opacity: 0;
+}
+
+.up {
+    box-shadow: 2px 2px 3px #00bcd46e;
+    position: fixed;
+    right: 35px;
+    bottom: 5%;
+    border-radius: 10px;
+    width: 40px;
+    height: 35px;
+    border-color: #03A9F4;
+    background-color: #03A9F4;
+    color: white;
+    font-family: inherit;
+    text-transform: uppercase;
+}
+
+.down {
+    box-shadow: 2px 2px 3px #00bcd46e;
+    position: fixed;
+    left: 35px;
+    bottom: 5%;
+    border-radius: 10px;
+    width: 40px;
+    height: 35px;
+    border-color: #03A9F4;
+    background-color: #03A9F4;
+    color: white;
+    font-family: inherit;
+    text-transform: uppercase; 
+}
+
+// Contact Details
+
+#contact {
+    margin: auto 100px;
+
+    li {
+        list-style-type: none;
+
+        a {
+            text-decoration: none;
+        }
+    }
+
+    p {
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    h3 {
+        text-align: center;
+        border-bottom: 1px solid #4f9ad6;
+        margin: auto 50px;
+    }
+}
+.contact-h1 {
+    text-align: center;
+    border-bottom: 1px solid #4f9ad6;
+    grid-column: span 2;
+}
+
+.download {
+    background-color: #008eff;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 10px;
+    text-decoration: none;
 }

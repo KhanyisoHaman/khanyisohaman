@@ -1,1 +1,37 @@
 // This is where I make my Grids
+
+#about {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(1fr,2);
+}
+
+#education {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(1fr,3);
+}
+
+#award {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(1fr,3);
+}
+
+#skill {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(1fr,4);
+}
+
+#projects {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(1fr,3);
+}
+
+#contact {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(1fr,2);
+}

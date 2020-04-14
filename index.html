@@ -9,7 +9,7 @@
     <!-- CSS StyleSheet -->
     <link rel="stylesheet" href="css/main.css">
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Baloo+Thambi+2|Gotu|Sen&display=swap" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Baloo+Thambi+2|Gotu|Sen&display=swap" rel="stylesheet"> -->
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <!-- Bootstrap CSS Stylesheets -->
@@ -20,20 +20,238 @@
     <div id="webpage-container">
         <!-- Header -->
         <header>
+            <!-- Toggle Button -->
+            <p><span class="logo">Khanyiso Haman</span>
+                <a href="#" onclick="toggleMenu()"><img id="toggle-menu" src="media/images/icons/bars-solid.svg" alt=""></a>
+            </p>
             <!-- NAV Bar -->
-            <nav>
-                <span><a href="#">About Me</a></span>
-                <span><a href="#">Education</a></span>
-                <span><a href="#">Skills</a></span>
-                <span><a href="#">Projects</a></span>
-                <span><a href="#">Contact</a></span>
+            <nav id="navBar" class="content">
+                <span><a href="#about">About Me</a></span>
+                <span><a href="#education">Education</a></span>
+                <span><a href="#skill">Skills</a></span>
+                <span><a href="#projects">Projects</a></span>
+                <span><a href="#contact">Contact</a></span>
             </nav>
-
+            <!-- Hero Text -->
             <h1 id="dp-name">Khanyiso Haman</h1>
             <h3 id="sub-text">Dr.West, Legend of Legends</h3>
         </header>
+        <!-- Dp Pic -->
+        <a href="#about"><div id="dp-pic"></div></a>
+       
+        <!-- Curriculm Vitae -->
+        <main>
+            <!-- About Dr.West -->
+            <section id="about">
+                <h1 class="about-h1">About Me</h1>
+                <!-- My Pic -->
+                <div class="about-image"><img src="media/images/my_pics/khanyi-min.JPG" alt=""></div>
+                <!-- About Text - WHO AM I? -->
+                <div class="about-text">
+                    <p class="first-para" id="slideOne">As mentinoned above I am <b>Khanyiso Haman aka Dr.West, Legend of Legends</b>(How I got the name Dr.West is a story for another day). I take pride in standing out in any environment because I believe in embracing the difference in each person and myself.</p>
+                    <p> </p>
+                    <p class="second-para" id="slideTwo"><b>I am</b> a young, vibrant and multilingual individual  with an extensive amount of self-confidence and charisma. Well known for my leadership skills, and kind nature, with the ability to not only multitask but to work with a diverse group of people.</p>
 
-        <div id="dp-pic"></div>
+                    <p class="second-para signature" slideThree> Khanyiso Haman</p>
+                </div>
+            </section>
+
+            <button class="up" id="buttonUp"><a href="#">U</a></button>
+
+            <button class="down" id="buttonDown"><a href="#contact">D</a></button>
+
+            <!-- My Education -->
+            <section id="education">
+                <h1 class="edu-h1">Education</h1>
+                <!-- Life Choices Academy -->
+                <article class="edu-block">
+                    <h3>Life Choices Academy, Lansdowne</h3>
+                    <p>Full Stack Web Development</p>
+                    <span><b>Nov 2018 - April 2019</b></span>
+                    <p>I was part of a 12-month program, in which we had spent the first six
+                    months of learning web development. The rest of the six months is an
+                    internship (pending).</p>
+                </article>
+                <!-- Year Beyond -->
+                <article class="edu-block">
+                    <h3>Stellenbosch University, Wynberg</h3>
+                    <p>YearBeyond Volunteer Leadership</p>
+                    <span><b>Feb 2018 - Nov 2018</b></span>
+                    <p>Whilst in the YearBeyond program we enrolled in a short course, which
+                    was to equip us with leadership, mentorship, and public speaking skills.</p>
+                </article>
+                <!-- Delft Technical High -->
+                <article class="edu-block">
+                    <h3>Delft Technical High School, Delft</h3>
+                    <p>National Senior Certificate</p>
+                    <span><b>Class of 2017</b></span>
+                    <p>I spent my whole high school life at Delft Technical High, we were also equipped with
+                        hard skills (such as cold bending, welding etc) and communication skills.</p>
+                </article>
+            </section>
+
+            <!-- My Accomplishments -->
+            <section id="award">
+                    <!-- Accomplishments -->
+                    <h2 class="award-h1">Awards</h2>
+                    <h4 class="award-h4"> Social Innovation Challenge Winners </h4>
+                    <p class="innovationChallenge">105 Young people pitched their solutions to one of our wicked problems, the inability of more than three-quarters of our youth to read with comprehension. They presented ideas of how we as a nation can build a culture of reading. Throughout the year they partcipated in 3 Challenges: Defining The Problem, Ideology (Idea that will combat the problem), Implementation(How would they implement the idea).</p>
+                    <!-- Social Innovation Challenge 1 -->
+                    <article class="award-block">
+                        <img src="media/images/my_pics/sic1.jpg" alt="">
+                        <div class="sicText">
+                            <p>Social Innovation Challenge #1 Winners<p>
+                        </div>
+                    </article>
+                    <!-- Social Innovation Challenge 2 -->
+                    <article class="award-block">
+                        <img src="media/images/my_pics/sic-1.jpg" alt="">
+                        <div class="sicText">
+                            <p>Social Innovation Challenge #2 Winners<p></p>
+                        </div>
+                    </article>
+                    <!-- Social Innovation Challenge 3 -->
+                    <article class="award-block">
+                        <img src="media/images/my_pics/yoam.jpg" alt="">
+                        <div class="sicText">
+                            <p>Social Innovation Challenge #3 Winners<p></p>
+                        </div>
+                    </article>
+            </section>
+
+            <!-- My Skills -->
+            <section id="skill">
+                <h1 class="skill-h1">Skills & Competencies</h1>
+
+                <p>I am outspoken individual who can encourage and motivate people to be the best versions of themselves. I have considerate amount of knowledge in computer literacy and desktop support, I also know my way around Microsoft Word, Excel, Powerpoint and Publisher. Thus I am an individual who approaches problems with the skills such as <i>Design</i>, <i>Strategic</i>, and <i>Critical Thinking</i>. I possess the ability to work with others because I am empathic, have good communication skills, and a servant leader (which is to lead from behind instead of infront). I also have gained skills such as research, public speaking, and sharp thinking skills</p>
+
+                <p>With my academic journey with Life Choices, I have attained Full Stack Web Development skills. The languages I possess are HTML5, CSS3, Ruby (SASS), REACT Js (Node Js), and Javascript. I have some famarlity with Full Stack Frameworks such as Bootstrap and Bulma.I was a Robotics Facilitator for Codespace, where I facilitated Sonic Pi, Design Thinking and Arduino Robotics. On my own I have taught myself Adobe Photoshop.</p>
+
+                <p>If you want to know more about this languages, click any of the corresponding icons:</p>
+
+                <!-- HTML5 -->
+                <div class="codeIcon">
+                    <div class="icon"><img src="media/images/icons/HTML5_ICON.png" alt=""></div>
+                    <span>HTML5</span>
+                </div>
+                <!-- CSS 3 -->
+                <div class="codeIcon">
+                    <div class="icon"><img src="media/images/icons/css3.png" alt="" class="css3"></div>
+                    <span>CSS3</span>
+                </div>
+                <!-- RUBY (SCSS) -->
+                <div class="codeIcon">
+                    <div class="icon"><img src="media/images/icons/sass.png" alt=""></div>
+                    <span>RUBY (SCSS)</span>
+                </div>
+                <!-- REACT JS (Node Js) -->
+                <div class="codeIcon">
+                    <div class="icon"><img src="media/images/icons/node-js-javascript-computer-icons-others.jpg" alt=""></div>
+                    <span>REACT Js</span>
+                </div>
+                <!-- Javascript -->
+                <div class="codeIcon">
+                    <div class="icon"><img src="media/images/icons/javascript.png" alt=""></div>
+                    <span>Javascript</span>
+                </div>
+                <!-- Sonic Pi -->
+                <div class="codeIcon">
+                    <div class="icon"></div>
+                    <span>Sonic Pi</span>
+                </div>
+                <!-- RESTful Api & CRUD -->
+                <div class="codeIcon">
+                    <div class="icon"></div>
+                    <span>Arduino Robotics</span>
+                </div>
+                <!-- Express Js -->
+                <div class="codeIcon">
+                    <div class="icon"></div>
+                    <span>Scratch</span>
+                </div>
+            </section>
+
+            <!-- My Projects -->
+            <section id="projects">
+                <h1 class="project-h1">Projects</h1>
+                <!-- Handmade Shop -->
+                <article class="project-block">
+                    <img src="media/images/projects/handmade-shop.PNG" alt="">
+                    <div class="project-overlay">
+                        <div class="overlay-text">Handmade Shop</div>
+                    </div>
+                </article>
+                <!-- Video -->
+                <article class="project-block">
+                    <video controls>
+                        <source src="media/videos/YPG Delft Bandana Challenge.mp4" type="video/mp4">
+                    </video>
+                    <span class="overlay">
+                        <div class="video-text">YPG Delft: TPA Bandana Challenge</div>
+                    </span>
+                </article>
+                <!-- Outdoor Adventures -->
+                <article class="project-block">
+                    <img src="media/images/projects/outdoor.PNG" alt="">
+                    <div class="project-overlay">
+                        <div class="overlay-text">Outdoor Adventures</div>
+                    </div>
+                </article>
+                <!-- Vintage -->
+                <article class="project-block">
+                    <img src="media/images/projects/vintage.jpg" alt="">
+                    <div class="project-overlay">
+                        <div class="overlay-text">YPG Vintage Picture</div>
+                    </div>
+                </article>
+                <!-- Talkspace Blog -->
+                <article class="project-block">
+                    <img src="media/images/projects/talkspace-blog.PNG" alt="">
+                    <div class="project-overlay">
+                        <div class="overlay-text">Talkspace Blog</div>
+                    </div>
+                </article>
+                <!-- Nothing To Lose Movie -->
+                <article class="project-block">
+                    <a href="media/images/projects/nothing to lose 2 movie - 6 days.jpg" target="_blank"><img src="media/images/projects/nothing to lose 2 movie - 6 days.jpg" alt=""></a>
+                    <div class="project-overlay">
+                        <div class="overlay-text">Nothing To Lose 2 Movie Countdown Poster</div>
+                    </div>
+                </article>
+            </section>
+
+        </main>
+        <!-- Contact Me -->
+        <section id="contact">
+            <h1 class="contact-h1">Contact Me</h1>
+            <!-- Contact Details -->
+            <article class="contact-block">
+                <h3>Contact Details</h3>
+                <ul>
+                    <li>Call me by <b>081 429 2258</b></li>
+                    <li>Email me at <a href="mailto:khanyisohaman@gmail.com">khanyisohaman@gmail.com</a></li>
+                    <li>Check more of my work at <a href="https://github.com/KhanyisoHaman">https://github.com/KhanyisoHaman</a></li>
+                </ul>
+                <p><a class="download" href="media/documents/Khanyiso Haman - Résume .pdf">Download CV</a></p>
+            </article>
+            <!-- Links -->
+            <article class="contact-block">
+                <h3>Links</h3>
+                <ul>
+                    <!-- Home -->
+                    <li><a href="#">Home</a></li>
+                    <!-- About -->
+                    <li><a href="#about">About Me</a></li>
+                    <!-- Education -->
+                    <li><a href="#education">My Education</a></li>
+                    <!-- Skills -->
+                    <li><a href="#skill">My Skills</a></li>
+                    <!-- Project -->
+                    <li><a href="#projects">My Projects</a></li>
+                </ul>
+            </article>
+        </section>
+
     </div>
 
     <!-- Links -->

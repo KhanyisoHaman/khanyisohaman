@@ -41,7 +41,7 @@ Technologies and Tools Used:
 
 ### Changelog
 
-2020-03-31:
+2020-03-31 (Late Night):
 - Repo Created
 - ReadMe Created and Edited
 - Base Folders Created
@@ -51,6 +51,11 @@ Technologies and Tools Used:
 - Nav Created and Styled
 - Jump Link Image Created
 - Hero Text Created and Edited
+
+2020-04-02:
+- Added Toggle Button
+- Made website Responsive to Tablet and Phone sizes
+-
 
 
 

@@ -1,4 +1,8 @@
 // This is where I style my element tags
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Sen', sans-serif;
     margin: 0;
@@ -7,10 +11,23 @@ body {
 header {
     width: auto;
     height: 80vh;
-    text-align: center;
+    // height: 100vh;
     background-image: url(../media/images/background/mountain.jpg);
     background-size: cover;
     background-position: center;
+    margin: 0;
+
+    // Toggle Menu Button
+    img {
+        width: 30px;
+        height: 30px;
+        text-align: left;
+        padding-left: 20px;;
+    }
+
+    p {
+        display: none;
+    }
 }
 
 // NAV Bar
@@ -22,6 +39,7 @@ nav {
     height: 40px;
     background-color: white;
 
+
     span {
         margin: 0 2%;
         font-size: 20px;
@@ -32,4 +50,8 @@ nav {
         text-decoration: none;
         color: #4f9ad6;
     }
+}
+
+main {
+    margin-top: 8%;
 }
