@@ -6,6 +6,8 @@
     <!-- Webpage Title -->
     <title>Khanyiso Haman</title>
     <!-- Links -->
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.js"></script>
     <!-- CSS StyleSheet -->
     <link rel="stylesheet" href="css/main.css">
     <!-- Google Fonts -->
@@ -25,7 +27,7 @@
                 <a href="#" onclick="toggleMenu()"><img id="toggle-menu" src="media/images/icons/bars-solid.svg" alt=""></a>
             </p>
             <!-- NAV Bar -->
-            <nav id="navBar" class="content">
+            <nav id="navBar">
                 <span><a href="#about">About Me</a></span>
                 <span><a href="#education">Education</a></span>
                 <span><a href="#skill">Skills</a></span>
@@ -56,9 +58,9 @@
                 </div>
             </section>
 
-            <button class="up" id="buttonUp"><a href="#">U</a></button>
+            <button class="up" id="buttonUp"><a href="#"><i class="fas fa-chevron-up"></i></a></button>
 
-            <button class="down" id="buttonDown"><a href="#contact">D</a></button>
+            <button class="down" id="buttonDown"><a href="#contact"><i class="fas fa-chevron-down"></i></a></button>
 
             <!-- My Education -->
             <section id="education">
@@ -125,48 +127,48 @@
 
                 <p>I am outspoken individual who can encourage and motivate people to be the best versions of themselves. I have considerate amount of knowledge in computer literacy and desktop support, I also know my way around Microsoft Word, Excel, Powerpoint and Publisher. Thus I am an individual who approaches problems with the skills such as <i>Design</i>, <i>Strategic</i>, and <i>Critical Thinking</i>. I possess the ability to work with others because I am empathic, have good communication skills, and a servant leader (which is to lead from behind instead of infront). I also have gained skills such as research, public speaking, and sharp thinking skills</p>
 
-                <p>With my academic journey with Life Choices, I have attained Full Stack Web Development skills. The languages I possess are HTML5, CSS3, Ruby (SASS), REACT Js (Node Js), and Javascript. I have some famarlity with Full Stack Frameworks such as Bootstrap and Bulma.I was a Robotics Facilitator for Codespace, where I facilitated Sonic Pi, Design Thinking and Arduino Robotics. On my own I have taught myself Adobe Photoshop.</p>
+                <p>With my academic journey with Life Choices, I have attained Full Stack Web Development skills. The languages I possess are HTML5, CSS3, SASS (SCSS), REACT Js (Node Js), and Javascript. I have some famarlity with Full Stack Frameworks such as Bootstrap and Bulma.I was a Robotics Facilitator for Codespace, where I facilitated Sonic Pi, Design Thinking and Arduino Robotics. On my own I have taught myself Adobe Photoshop.</p>
 
-                <p>If you want to know more about this languages, click any of the corresponding icons:</p>
+                <p>If you want to know more about this languages(some are not languages but programming software), click any of the corresponding icons:</p>
 
                 <!-- HTML5 -->
                 <div class="codeIcon">
-                    <div class="icon"><img src="media/images/icons/HTML5_ICON.png" alt=""></div>
+                    <a href="https://www.w3schools.com/htmL/html_intro.asp" class="icon"><img src="media/images/icons/HTML5_ICON.png" alt=""></a>
                     <span>HTML5</span>
                 </div>
                 <!-- CSS 3 -->
                 <div class="codeIcon">
-                    <div class="icon"><img src="media/images/icons/css3.png" alt="" class="css3"></div>
+                    <a href="https://www.w3schools.com/css/" class="icon"><img src="media/images/icons/css3.png" alt="" class="css3"></a>
                     <span>CSS3</span>
                 </div>
-                <!-- RUBY (SCSS) -->
+                <!-- SASS (SCSS) -->
                 <div class="codeIcon">
-                    <div class="icon"><img src="media/images/icons/sass.png" alt=""></div>
-                    <span>RUBY (SCSS)</span>
+                    <a href="https://sass-lang.com/" class="icon"><img src="media/images/icons/sass.png" alt=""></a>
+                    <span>SASS (SCSS)</span>
                 </div>
                 <!-- REACT JS (Node Js) -->
                 <div class="codeIcon">
-                    <div class="icon"><img src="media/images/icons/node-js-javascript-computer-icons-others.jpg" alt=""></div>
-                    <span>REACT Js</span>
+                    <a href="https://www.w3schools.com/nodejs/nodejs_intro.asp" class="icon"><img src="media/images/icons/node-js-javascript-computer-icons-others.jpg" alt=""></a>
+                    <span>Node Js</span>
                 </div>
                 <!-- Javascript -->
                 <div class="codeIcon">
-                    <div class="icon"><img src="media/images/icons/javascript.png" alt=""></div>
+                    <a href="https://www.w3schools.com/js/" class="icon"><img src="media/images/icons/javascript.png" alt=""></a>
                     <span>Javascript</span>
                 </div>
                 <!-- Sonic Pi -->
                 <div class="codeIcon">
-                    <div class="icon"></div>
+                    <a href="http://sonic-pi.net/" class="icon"><img src="media/images/icons/sonic pi.png" alt=""></a>
                     <span>Sonic Pi</span>
                 </div>
-                <!-- RESTful Api & CRUD -->
+                <!-- Arduino Robotics -->
                 <div class="codeIcon">
-                    <div class="icon"></div>
+                    <a href="https://www.codespace.co.za/courses/high-school-coding-robotics-holiday-camp" class="icon"><img src="media/images/icons/arduino robotics.png" alt=""></a>
                     <span>Arduino Robotics</span>
                 </div>
-                <!-- Express Js -->
+                <!-- Scratch -->
                 <div class="codeIcon">
-                    <div class="icon"></div>
+                    <a href="https://scratch.mit.edu/" class="icon"><img src="media/images/icons/scratch.png" alt=""></a>
                     <span>Scratch</span>
                 </div>
             </section>
@@ -177,9 +179,9 @@
                 <!-- Handmade Shop -->
                 <article class="project-block">
                     <img src="media/images/projects/handmade-shop.PNG" alt="">
-                    <div class="project-overlay">
+                    <a href="https://khanyisohaman.github.io/handmade-shop/" class="project-overlay">
                         <div class="overlay-text">Handmade Shop</div>
-                    </div>
+                    </a>
                 </article>
                 <!-- Video -->
                 <article class="project-block">
@@ -193,9 +195,9 @@
                 <!-- Outdoor Adventures -->
                 <article class="project-block">
                     <img src="media/images/projects/outdoor.PNG" alt="">
-                    <div class="project-overlay">
+                    <a href="https://khanyisohaman.github.io/outdoor-adventures/" class="project-overlay">
                         <div class="overlay-text">Outdoor Adventures</div>
-                    </div>
+                    </a>
                 </article>
                 <!-- Vintage -->
                 <article class="project-block">
@@ -207,9 +209,9 @@
                 <!-- Talkspace Blog -->
                 <article class="project-block">
                     <img src="media/images/projects/talkspace-blog.PNG" alt="">
-                    <div class="project-overlay">
+                    <a href="http://example-blog-example-blog.1d35.starter-us-east-1.openshiftapps.com/" class="project-overlay">
                         <div class="overlay-text">Talkspace Blog</div>
-                    </div>
+                    </a>
                 </article>
                 <!-- Nothing To Lose Movie -->
                 <article class="project-block">
@@ -252,11 +254,17 @@
             </article>
         </section>
 
+        <footer>
+            <p style="text-align: center; border-top: 1px solid; margin: auto 100px; padding: 20px 0;">2020 @ Khanyiso Haman</p>
+        </footer>
+
     </div>
 
     <!-- Links -->
     <!-- JS File -->
     <script src="js/main.js"></script>
+    <!-- JQUERY -->
+    <!-- <script src="https://code.jquery.com/jquery-3.4.0.min.js" integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=" crossorigin="anonymous"></script> -->
     <!-- Bootstrap JS Files -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>

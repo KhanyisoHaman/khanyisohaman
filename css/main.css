@@ -226,14 +226,16 @@ main {
 .codeIcon {
   text-align: center; }
   .codeIcon span {
-    transition: all ease-in-out .5s; }
+    transition: all ease-in-out .5s;
+    opacity: 0; }
 
 .icon {
   width: 50px;
   height: 50px;
   margin-left: 40%;
   cursor: pointer;
-  transition: all ease-in-out .5s; }
+  transition: all ease-in-out 1s;
+  display: block; }
   .icon img {
     width: 50px;
     height: 50px; }
@@ -242,10 +244,8 @@ main {
     height: 45px; }
 
 .codeIcon:hover span {
-  text-shadow: 0px 6px 3px black; }
-
-.codeIcon:hover .icon {
-  box-shadow: 2px 2px 3px black; }
+  opacity: 1;
+  text-shadow: 0px 6px 9px black; }
 
 #projects {
   margin: 50px 100px; }
@@ -260,6 +260,8 @@ main {
   width: 380px;
   height: 300px;
   position: relative; }
+  .project-block a {
+    text-decoration: none; }
   .project-block img {
     width: 380px;
     height: 300px; }
@@ -405,17 +407,18 @@ main {
     left: 0; }
 
   nav {
-    height: 100vh;
+    height: 42vh;
     display: block;
     position: absolute;
-    background-color: wheat;
+    background-color: white;
     left: -100%;
     transition: 0.5s; }
     nav span {
       display: block;
       padding: 10px 0;
-      font-size: 25px;
-      border-bottom: 1px solid #919191; }
+      font-size: 20px;
+      border-bottom: 1px solid #919191;
+      box-shadow: 2px 2px 3px black; }
 
   header p {
     padding: 5px 0;

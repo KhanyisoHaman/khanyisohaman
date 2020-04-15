@@ -184,6 +184,7 @@
     
     span {
         transition: all ease-in-out .5s;
+        opacity: 0;
     }
 }
 
@@ -195,7 +196,8 @@
     // border-radius: 10px;
     margin-left: 40%;
     cursor: pointer;
-    transition: all ease-in-out .5s;
+    transition: all ease-in-out 1s;
+    display: block;
 
     img {
         width: 50px;
@@ -210,12 +212,13 @@
 }
 
 .codeIcon:hover span {
-    text-shadow: 0px 6px 3px black;
+    opacity: 1;
+    text-shadow: 0px 6px 9px black;
 }
 
-.codeIcon:hover .icon {
-    box-shadow: 2px 2px 3px black;
-}
+// .codeIcon:hover .icon {
+//     box-shadow: 2px 2px 3px #000000;
+// }
 
 
 #projects {
@@ -234,6 +237,10 @@
     height: 300px;
     position: relative;
     // margin-left: 10%;
+
+    a {
+        text-decoration: none;
+    }
 
     img {
         width: 380px;
