@@ -1,36 +1,54 @@
-
-
 // Toggle Menu
-
 function toggleMenu() {
     var elem = document.getElementById("navBar");
-        elem.classList.add("active");  
+        elem.classList.toggle("active");  
 }
 
-    // JQUERY
-    $(document).ready(function(){
-        $('#toggle-menu').click(function(){
-            $('#navBar').toggleClass('active');
-        })
-    })
-
-// Previous Postion of the Scroll
-// var preScrollpos = window.pageYOffset;
-
-// window.onscroll = function() {
-//     // Current Scroll Postion
-//     var currentScrollPos = window.pageYOffset;
-//     var buttonUp = getElementById("buttonUp");
-//     var buttonDown = getElementById("buttonDown");
-
-//     if(preScrollpos > currentScrollPos) {
-//         buttonUp.style.display = block;
-//     }
-
-//     else {
-//         buttonUp.style.display = none;
-//     }
-
-//     preScrollpos = currentScrollPos
-
-// }
+$(document).ready(function () {
+    $('.brands-carousel').slick({
+		dots: false,
+		slidesToShow: 4,
+		arrows: false,
+		slidesToScroll: 4,
+		centerMode: true,
+		centerPadding: '40px',
+		draggable: true,
+		autoplay: true,
+		autoplaySpeed: 0,
+		infinite: true,
+		arrows: false,
+		speed: 5000,
+		easing: 'linear',
+		responsive: [{
+			breakpoint: 800,
+			settings: {
+				arrows: true,
+				slidesToScroll: 2,
+				centerMode: true,
+				centerPadding: '20px',
+				slidesToShow: 2
+			}
+		},
+		{
+			breakpoint: 560,
+			settings: {
+				arrows: false,
+				centerMode: true,
+				slidesToScroll: 1,
+				centerPadding: '50px',
+				slidesToShow: 1
+			}
+		},
+		{
+			breakpoint: 400,
+			settings: {
+				arrows: false,
+				centerMode: true,
+				slidesToScroll: 1,
+				centerPadding: '25px',
+				slidesToShow: 1
+			}
+		}
+		]
+	});
+});

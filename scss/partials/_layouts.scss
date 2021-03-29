@@ -3,35 +3,52 @@
 #about {
     display: grid;
     grid-gap: 20px;
-    grid-template-columns: repeat(1fr,2);
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0 auto;
+    max-width: 1360px;
 }
 
 #education {
     display: grid;
     grid-gap: 20px;
-    grid-template-columns: repeat(1fr,3);
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0 auto;
+    max-width: 1360px;
 }
 
 #award {
     display: grid;
     grid-gap: 20px;
-    grid-template-columns: repeat(1fr,3);
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0 auto;
+    max-width: 1360px;
 }
 
 #skill {
     display: grid;
     grid-gap: 20px;
-    grid-template-columns: repeat(1fr,4);
+    grid-template-columns: repeat(4, 1fr);
+    max-width: 1360px;
 }
 
 #projects {
     display: grid;
     grid-gap: 20px;
-    grid-template-columns: repeat(1fr,3);
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 1360px;
+}
+
+#brands{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(1, 1fr);
+    max-width: 1360px;
 }
 
 #contact {
     display: grid;
     grid-gap: 20px;
-    grid-template-columns: repeat(1fr,2);
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0 auto;
+    max-width: 1360px;
 }
