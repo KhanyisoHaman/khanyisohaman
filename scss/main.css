@@ -583,8 +583,8 @@ footer p {
     font-size: 17px;
   }
   #projects {
-    -ms-grid-columns: (2)[1fr];
-        grid-template-columns: repeat(1fr, 2);
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
   }
   .project-h1 {
     grid-column: span 2;
@@ -669,16 +669,16 @@ footer p {
   }
   #education {
     margin: auto 50px;
-    -ms-grid-columns: (2)[1fr];
-        grid-template-columns: repeat(1fr, 2);
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
   }
   .edu-h1 {
     grid-column: span 2;
   }
   #award {
     margin: auto 50px;
-    -ms-grid-columns: (2)[1fr];
-        grid-template-columns: repeat(1fr, 2);
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
   }
   .award-h1 {
     grid-column: span 2;
@@ -695,8 +695,8 @@ footer p {
   }
   #skill {
     margin: 50px;
-    -ms-grid-columns: (2)[1fr];
-        grid-template-columns: repeat(1fr, 2);
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
   }
   .skill-h1 {
     grid-column: span 2;
@@ -729,24 +729,24 @@ footer p {
   }
   #about {
     margin: 50px 25px;
-    -ms-grid-columns: (1)[1fr];
-        grid-template-columns: repeat(1fr, 1);
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
   }
   .about-h1 {
     grid-column: span 1;
   }
   #education {
     margin: auto 30px;
-    -ms-grid-columns: (1)[1fr];
-        grid-template-columns: repeat(1fr, 1);
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
   }
   .edu-h1 {
     grid-column: span 1;
   }
   #award {
     margin: auto 25px;
-    -ms-grid-columns: (1)[1fr];
-        grid-template-columns: repeat(1fr, 1);
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
   }
   .award-h1, .award-h4 {
     grid-column: span 1;
@@ -760,23 +760,23 @@ footer p {
   }
   #skill {
     margin: 50px 25px;
-    -ms-grid-columns: (2)[1fr];
-        grid-template-columns: repeat(1fr, 2);
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
   }
   .icon {
     margin-left: 35%;
   }
-  #project {
+  #projects {
     margin: 50px 25px;
-    -ms-grid-columns: (1)[1fr];
-        grid-template-columns: repeat(1fr, 1);
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
   }
   .project-h1 {
     grid-column: span 1;
   }
   #contact {
-    -ms-grid-columns: (1)[1fr];
-        grid-template-columns: repeat(1fr, 1);
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
     margin: auto 50px;
   }
   #contact .contact-h1 {

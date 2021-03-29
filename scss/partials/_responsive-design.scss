@@ -13,7 +13,7 @@
     }
 
     #projects {
-        grid-template-columns: repeat(1fr,2);
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .project-h1 {
@@ -123,7 +123,7 @@
 
     #education {
         margin: auto 50px;
-        grid-template-columns: repeat(1fr,2);
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .edu-h1 {
@@ -132,7 +132,7 @@
 
     #award {
         margin: auto 50px;
-        grid-template-columns: repeat(1fr,2);
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .award-h1 {
@@ -153,7 +153,7 @@
 
     #skill {
         margin: 50px;
-        grid-template-columns: repeat(1fr,2);
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .skill-h1 {
@@ -198,7 +198,7 @@
 
     #about {
         margin: 50px 25px;
-        grid-template-columns: repeat(1fr,1);
+        grid-template-columns: repeat(1, 1fr);
     }
 
     .about-h1 {
@@ -207,7 +207,7 @@
 
     #education {
         margin: auto 30px;
-        grid-template-columns: repeat(1fr,1);
+        grid-template-columns: repeat(1, 1fr);
     }
 
     .edu-h1 {
@@ -216,7 +216,7 @@
 
     #award {
         margin: auto 25px;
-        grid-template-columns: repeat(1fr,1);
+        grid-template-columns: repeat(1, 1fr);
     }
 
     .award-h1, .award-h4 {
@@ -233,16 +233,16 @@
 
     #skill {
         margin: 50px 25px;
-        grid-template-columns: repeat(1fr,2);
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .icon {
         margin-left: 35%;
     }
 
-    #project {
+    #projects {
         margin: 50px 25px;
-        grid-template-columns: repeat(1fr,1);
+        grid-template-columns: repeat(1, 1fr);
     }
 
     .project-h1 {
@@ -250,7 +250,7 @@
     }
 
     #contact {
-        grid-template-columns: repeat(1fr,1);
+        grid-template-columns: repeat(1, 1fr);
         margin: auto 50px;
         .contact-h1 {
             grid-column: span 1;
