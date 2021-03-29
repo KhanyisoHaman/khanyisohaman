@@ -145,7 +145,7 @@ footer p {
 #brands {
   display: -ms-grid;
   display: grid;
-  grid-gap: 20px;
+  grid-gap: 10px;
   -ms-grid-columns: (1fr)[1];
       grid-template-columns: repeat(1, 1fr);
   max-width: 1360px;
@@ -479,6 +479,10 @@ footer p {
 
 #brands {
   margin: 50px auto;
+}
+
+#brands p {
+  text-align: center;
 }
 
 .brands-h1 {
