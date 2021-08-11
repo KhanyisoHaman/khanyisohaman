@@ -1,302 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Webpage Title -->
-    <title>Khanyiso Haman</title>
-    <!-- Links -->
-    <!-- CSS StyleSheet -->
-    <link rel="stylesheet" href="scss/main.css">
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Baloo+Thambi+2|Gotu|Sen&display=swap" rel="stylesheet">
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-    <!-- Bootstrap CSS Stylesheets -->
-    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> -->
-    <!-- Slick Slider -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css" integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg==" crossorigin="anonymous" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw==" crossorigin="anonymous" />
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Webpage Title -->
+        <title>Khanyiso Haman</title>
+        <!-- Links -->
+        <!-- CSS StyleSheet -->
+        <link rel="stylesheet" href="scss/main.css">
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Baloo+Thambi+2|Gotu|Sen&display=swap" rel="stylesheet">
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+        <!-- Bootstrap CSS Stylesheets -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <!-- Slick Slider -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css" integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg==" crossorigin="anonymous" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw==" crossorigin="anonymous" />
+
+        <style>
+            body{
+                margin: 0;
+                padding: 0;
+                height: 100vh;
+                background-image: url(../media/images/background/resume-web-holding-page.png);
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+
+            main{
+                display: grid;
+                height: 100vh;
+                margin: 0 auto;
+                padding: 0;
+            }
+
+            h1{
+                max-width: 100%;
+                width: 100%;
+                font-family: 'Sen', sans-serif;
+                font-weight: bold;
+                font-size: 14rem;
+                color: #fff;
+                text-transform: uppercase;
+                text-shadow: 1px 2px 5px black;
+                text-align: center;
+                align-self: center;
+                
+            }
+
+            span{
+                display: block;
+                font-size: 100px;
+            }
+
+            p, h4{
+                width: 50%;
+                margin: 10px auto;
+                text-align: center;
+            }
+            
+            a{
+                text-decoration: underline;
+                color: #fff;
+                font-style: italic;
+            }
+        </style>
+    </head>
 <body>
-    <!-- Conatiner That Contains The Whole Webpage -->
-    <div id="webpage-container">
-        <!-- Header -->
-        <header>
-            <!-- Toggle Button -->
-            <p><span class="logo">Khanyiso Haman</span>
-                <a href="#" onclick="toggleMenu()"><img id="toggle-menu" src="media/images/icons/bars-solid.svg" alt=""></a>
-            </p>
-            <!-- NAV Bar -->
-            <nav id="navBar">
-                <span class="nav-item"><a href="#about">About Me</a></span>
-                <span class="nav-item"><a href="#education">Education</a></span>
-                <span class="nav-item"><a href="#skill">Skills</a></span>
-                <span class="nav-item"><a href="#projects">Projects</a></span>
-                <span class="nav-item"><a href="#contact">Contact</a></span>
-            </nav>
-            <!-- Hero Text -->
-            <h1 id="dp-name">Khanyiso Haman</h1>
-            <h3 id="sub-text">Dr.West, Legend of Legends</h3>
-        </header>
-        <!-- Dp Pic -->
-        <a href="#about"><div id="dp-pic"></div></a>
-       
-        <!-- Curriculm Vitae -->
-        <main>
-            <!-- About Dr.West -->
-            <section id="about">
-                <h1 class="about-h1">About Me</h1>
-                <!-- My Pic -->
-                <div class="about-image"><img src="media/images/my_pics/khanyi-min.JPG" alt=""></div>
-                <!-- About Text - WHO AM I? -->
-                <div class="about-text">
-                    <p class="first-para" id="slideOne">As mentinoned above I am <b>Khanyiso Haman aka Dr.West, Legend of Legends</b>(How I got the name Dr.West is a story for another day). I take pride in standing out in any environment because I believe in embracing the difference in each person and myself.</p>
-                    <p> </p>
-                    <p class="second-para" id="slideTwo"><b>I am</b> a young, vibrant and multilingual individual  with an extensive amount of self-confidence and charisma. Well known for my leadership skills, and kind nature, with the ability to not only multitask but to work with a diverse group of people.</p>
-
-                    <p class="second-para signature" slideThree> Khanyiso Haman</p>
-                </div>
-            </section>
-
-            <button class="up" id="buttonUp"><a href="#"><i class="fas fa-chevron-up"></i></a></button>
-
-            <button class="down" id="buttonDown"><a href="#contact"><i class="fas fa-chevron-down"></i></a></button>
-
-            <!-- My Education -->
-            <section id="education">
-                <h1 class="edu-h1">Education</h1>
-                <!-- Life Choices Academy -->
-                <article class="edu-block">
-                    <h3>Life Choices Academy, Lansdowne</h3>
-                    <p>Full Stack Web Development</p>
-                    <span><b>Nov 2018 - April 2019</b></span>
-                    <p>I was part of a 12-month program, in which we had spent the first six
-                    months of learning web development. The rest of the six months is an
-                    internship (pending).</p>
-                </article>
-                <!-- Year Beyond -->
-                <article class="edu-block">
-                    <h3>Stellenbosch University, Wynberg</h3>
-                    <p>YearBeyond Volunteer Leadership</p>
-                    <span><b>Feb 2018 - Nov 2018</b></span>
-                    <p>Whilst in the YearBeyond program we enrolled in a short course, which
-                    was to equip us with leadership, mentorship, and public speaking skills.</p>
-                </article>
-                <!-- Delft Technical High -->
-                <article class="edu-block">
-                    <h3>Delft Technical High School, Delft</h3>
-                    <p>National Senior Certificate</p>
-                    <span><b>Class of 2017</b></span>
-                    <p>I spent my whole high school life at Delft Technical High, we were also equipped with
-                        hard skills (such as cold bending, welding etc) and communication skills.</p>
-                </article>
-            </section>
-
-            <!-- My Accomplishments -->
-            <section id="award">
-                    <!-- Accomplishments -->
-                    <h2 class="award-h1">Awards</h2>
-                    <h4 class="award-h4"> Social Innovation Challenge Winners </h4>
-                    <p class="innovationChallenge">105 Young people pitched their solutions to one of our wicked problems, the inability of more than three-quarters of our youth to read with comprehension. They presented ideas of how we as a nation can build a culture of reading. Throughout the year they partcipated in 3 Challenges: Defining The Problem, Ideology (Idea that will combat the problem), Implementation(How would they implement the idea).</p>
-                    <!-- Social Innovation Challenge 1 -->
-                    <article class="award-block">
-                        <img src="media/images/my_pics/sic1.jpg" alt="">
-                        <div class="sicText">
-                            <p>Social Innovation Challenge #1 Winners<p>
-                        </div>
-                    </article>
-                    <!-- Social Innovation Challenge 2 -->
-                    <article class="award-block">
-                        <img src="media/images/my_pics/sic-1.jpg" alt="">
-                        <div class="sicText">
-                            <p>Social Innovation Challenge #2 Winners<p></p>
-                        </div>
-                    </article>
-                    <!-- Social Innovation Challenge 3 -->
-                    <article class="award-block">
-                        <img src="media/images/my_pics/yoam.jpg" alt="">
-                        <div class="sicText">
-                            <p>Social Innovation Challenge #3 Winners<p></p>
-                        </div>
-                    </article>
-            </section>
-
-            <!-- My Skills -->
-            <section id="skill">
-                <h1 class="skill-h1">Skills & Competencies</h1>
-
-                <p>I am outspoken individual who can encourage and motivate people to be the best versions of themselves. I have considerate amount of knowledge in computer literacy and desktop support, I also know my way around Microsoft Word, Excel, Powerpoint and Publisher. Thus I am an individual who approaches problems with the skills such as <i>Design</i>, <i>Strategic</i>, and <i>Critical Thinking</i>. I possess the ability to work with others because I am empathic, have good communication skills, and a servant leader (which is to lead from behind instead of infront). I also have gained skills such as research, public speaking, and sharp thinking skills</p>
-
-                <p>With my academic journey with Life Choices, I have attained Full Stack Web Development skills. The languages I possess are HTML5, CSS3, SASS (SCSS), REACT Js (Node Js), and Javascript. I have some famarlity with Full Stack Frameworks such as Bootstrap and Bulma.I was a Robotics Facilitator for Codespace, where I facilitated Sonic Pi, Design Thinking and Arduino Robotics. On my own I have taught myself Adobe Photoshop.</p>
-
-                <p>If you want to know more about this languages(some are not languages but programming software), click any of the corresponding icons:</p>
-
-                <!-- HTML5 -->
-                <div class="codeIcon">
-                    <a href="https://www.w3schools.com/htmL/html_intro.asp" class="icon"><img src="media/images/icons/HTML5_ICON.png" alt=""></a>
-                    <span>HTML5</span>
-                </div>
-                <!-- CSS 3 -->
-                <div class="codeIcon">
-                    <a href="https://www.w3schools.com/css/" class="icon"><img src="media/images/icons/css3.png" alt="" class="css3"></a>
-                    <span>CSS3</span>
-                </div>
-                <!-- SASS (SCSS) -->
-                <div class="codeIcon">
-                    <a href="https://sass-lang.com/" class="icon"><img src="media/images/icons/sass.png" alt=""></a>
-                    <span>SASS (SCSS)</span>
-                </div>
-                <!-- REACT JS (Node Js) -->
-                <div class="codeIcon">
-                    <a href="https://en-za.wordpress.org/" class="icon"><img src="media/images/icons/ico-wordpress.png" alt=""></a>
-                    <span>Wordpress</span>
-                </div>
-                <!-- Javascript -->
-                <div class="codeIcon">
-                    <a href="https://www.w3schools.com/js/" class="icon"><img src="media/images/icons/javascript.png" alt=""></a>
-                    <span>Javascript</span>
-                </div>
-                <!-- Sonic Pi -->
-                <div class="codeIcon">
-                    <a href="https://www.w3schools.com/php/" class="icon"><img src="media/images/icons/ico-php.png" alt=""></a>
-                    <span>Php</span>
-                </div>
-                <!-- Arduino Robotics -->
-                <div class="codeIcon">
-                    <a href="https://www.codespace.co.za/courses/high-school-coding-robotics-holiday-camp" class="icon"><img src="media/images/icons/arduino robotics.png" alt=""></a>
-                    <span>Arduino Robotics</span>
-                </div>
-                <!-- Scratch -->
-                <div class="codeIcon">
-                    <a href="https://scratch.mit.edu/" class="icon"><img src="media/images/icons/scratch.png" alt=""></a>
-                    <span>Scratch</span>
-                </div>
-            </section>
-
-            <section id="brands">
-                <h1 class="brands-h1">Brands</h1>
-                <p>These are brands I have worked one thus far:</p>
-                <div class="brands-carousel">
-                    <article class="brands-block">
-                        <a href="https://www.bestdrive.co.za/" target="_blank"><img src="media/images/icons/brands/ico-bestdrive.png" alt=""></a>
-                    </article>
     
-                    <article class="brands-block">
-                        <a href="https://www.cticc.co.za/" target="_blank"><img src="media/images/icons/brands/ico-cticc.png" alt=""></a>
-                    </article>
-    
-                    <article class="brands-block">
-                        <a href="https://myfanpark.com/" target="_blank"><img src="media/images/icons/brands/ico-mfp.png" alt=""></a>
-                    </article>
-    
-                    <article class="brands-block">
-                        <a href="https://www.rsg.co.za/rsg/" target="_blank"><img src="media/images/icons/brands/ico-rsg.png" alt=""></a>
-                    </article>
-
-                    <article class="brands-block">
-                        <a href="https://www.bestdrive.co.za/" target="_blank"><img src="media/images/icons/brands/ico-bestdrive.png" alt=""></a>
-                    </article>
-    
-                    <article class="brands-block">
-                        <a href="https://www.cticc.co.za/" target="_blank"><img src="media/images/icons/brands/ico-cticc.png" alt=""></a>
-                    </article>
-    
-                    <article class="brands-block">
-                        <a href="https://myfanpark.com/" target="_blank"><img src="media/images/icons/brands/ico-mfp.png" alt=""></a>
-                    </article>
-    
-                    <article class="brands-block">
-                        <a href="https://www.rsg.co.za/rsg/" target="_blank"><img src="media/images/icons/brands/ico-rsg.png" alt=""></a>
-                    </article>
-                </div>
-            </section>
-            <!-- My Projects -->
-            <section id="projects">
-                <h1 class="project-h1">Projects</h1>
-                <!-- Handmade Shop -->
-                <article class="project-block">
-                    <img src="media/images/projects/handmade-shop.PNG" alt="">
-                    <a href="https://khanyisohaman.github.io/handmade-shop/" class="project-overlay">
-                        <div class="overlay-text">Handmade Shop</div>
-                    </a>
-                </article>
-                <!-- Video -->
-                <article class="project-block">
-                    <video controls>
-                        <source src="media/videos/YPG Delft Bandana Challenge.mp4" type="video/mp4">
-                    </video>
-                    <span class="overlay">
-                        <div class="video-text">YPG Delft: TPA Bandana Challenge</div>
-                    </span>
-                </article>
-                <!-- Outdoor Adventures -->
-                <article class="project-block">
-                    <img src="media/images/projects/outdoor.PNG" alt="">
-                    <a href="https://khanyisohaman.github.io/outdoor-adventures/" class="project-overlay">
-                        <div class="overlay-text">Outdoor Adventures</div>
-                    </a>
-                </article>
-                <!-- Vintage -->
-                <article class="project-block">
-                    <img src="media/images/projects/vintage.jpg" alt="">
-                    <div class="project-overlay">
-                        <div class="overlay-text">YPG Vintage Picture</div>
-                    </div>
-                </article>
-                <!-- Talkspace Blog -->
-                <article class="project-block">
-                    <img src="media/images/projects/talkspace-blog.PNG" alt="">
-                    <a href="http://example-blog-example-blog.1d35.starter-us-east-1.openshiftapps.com/" class="project-overlay">
-                        <div class="overlay-text">Talkspace Blog</div>
-                    </a>
-                </article>
-                <!-- Nothing To Lose Movie -->
-                <article class="project-block">
-                    <a href="media/images/projects/nothing to lose 2 movie - 6 days.jpg" target="_blank"><img src="media/images/projects/nothing to lose 2 movie - 6 days.jpg" alt=""></a>
-                    <div class="project-overlay">
-                        <div class="overlay-text">Nothing To Lose 2 Movie Countdown Poster</div>
-                    </div>
-                </article>
-            </section>
-
-        </main>
-        <!-- Contact Me -->
-        <section id="contact">
-            <h1 class="contact-h1">Contact Me</h1>
-            <!-- Contact Details -->
-            <article class="contact-block">
-                <h3>Contact Details</h3>
-                <ul>
-                    <li>Call me by <b><a href="081 429 2258">081 429 2258</a></b></li>
-                    <li>Email me at <a href="mailto:khanyisohaman@gmail.com">khanyisohaman@gmail.com</a></li>
-                    <li>Check more of my work at <a href="https://github.com/KhanyisoHaman">https://github.com/KhanyisoHaman</a></li>
-                </ul>
-                <p><a target="_blank" class="download" href="media/documents/Khanyiso Haman - Résume .pdf">Download CV</a></p>
-            </article>
-            <!-- Links -->
-            <article class="contact-block">
-                <h3>Links</h3>
-                <ul>
-                    <!-- Home -->
-                    <li><a href="#">Home</a></li>
-                    <!-- About -->
-                    <li><a href="#about">About Me</a></li>
-                    <!-- Education -->
-                    <li><a href="#education">My Education</a></li>
-                    <!-- Skills -->
-                    <li><a href="#skill">My Skills</a></li>
-                    <!-- Project -->
-                    <li><a href="#projects">My Projects</a></li>
-                </ul>
-            </article>
-        </section>
-
-        <footer>
-            <p>2020 @ Khanyiso Haman</p>
-        </footer>
-
-    </div>
+    <main class="holding-container">
+        <h1>Website is <span>Under Reconstruction</span></h1>
+        <div class="text">
+            <h4>Hi <b>there</b></h4>
+            <p>Khanyiso here, currently I am rebuilding my website with cool and creative features that will personify Dr.West(Me). So for now please see the <a href="media/documents/khanyiso_haman-resume.pdf">link</a> to my documented CV.</p>
+        </div>
+    </main>
 
     <!-- Links -->
     <!-- JQUERY -->
